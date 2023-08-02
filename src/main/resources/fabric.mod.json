@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "hopper-prefill-mod",
+	"version": "${version}",
+	"name": "Hopper prefill mod",
+	"description": "For Prefill Hoppers for sorting, fast and easy",
+	"authors": [
+		"Yokomi_"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/hopper-prefill-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "name.hopper_prefill_mod.HopperPrefillMod"
+		],
+		"client": [
+			"name.hopper_prefill_mod.HopperPrefillModClient"
+		],
+		"fabric-datagen": [
+			"name.hopper_prefill_mod.HopperPrefillModDataGenerator"
+		]
+	},
+	"mixins": [
+		"hopper-prefill-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
